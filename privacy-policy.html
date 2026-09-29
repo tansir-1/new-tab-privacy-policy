@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>新标签页导航 - 隐私政策</title>
+  <style>
+    :root { color-scheme: light; --bg:#f6f8fc; --card:#fff; --text:#172033; --sub:#5d6779; --line:#e4e8f0; --accent:#4f7cff; }
+    @media (prefers-color-scheme: dark) { :root { color-scheme:dark; --bg:#10131a; --card:#181d27; --text:#eef2ff; --sub:#aab3c5; --line:#2b3240; --accent:#86a6ff; } }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--bg); color:var(--text); font:16px/1.75 system-ui,-apple-system,"Segoe UI","Microsoft YaHei",sans-serif; }
+    main { width:min(860px,calc(100% - 32px)); margin:48px auto; padding:44px 48px; background:var(--card); border:1px solid var(--line); border-radius:20px; box-shadow:0 16px 45px rgba(30,42,70,.08); }
+    h1 { margin:0 0 4px; font-size:32px; line-height:1.25; }
+    h2 { margin:34px 0 8px; font-size:20px; }
+    p,li { color:var(--sub); }
+    a { color:var(--accent); }
+    .meta { margin:0 0 28px; font-size:14px; }
+    .notice { margin:24px 0; padding:16px 18px; border-left:4px solid var(--accent); background:color-mix(in srgb,var(--accent) 8%,transparent); border-radius:8px; }
+    footer { margin-top:40px; padding-top:20px; border-top:1px solid var(--line); font-size:14px; color:var(--sub); }
+    @media (max-width:640px) { main { margin:0; width:100%; min-height:100vh; padding:30px 22px; border:0; border-radius:0; } }
+  </style>
+</head>
+<body>
+<main>
+  <h1>新标签页导航隐私政策</h1>
+  <p class="meta">生效日期：2026 年 9 月 29 日　·　最后更新：2026 年 9 月 29 日</p>
+
+  <p>“新标签页导航”（以下简称“本扩展”）尊重并保护用户隐私。本政策说明本扩展处理哪些数据、处理目的以及用户可以如何管理这些数据。</p>
+
+  <h2>1. 本扩展处理的数据</h2>
+  <ul>
+    <li><strong>新标签页配置：</strong>用户添加的分类、网站名称、网站地址、图标设置、主题、搜索偏好、背景图片和界面设置。</li>
+    <li><strong>浏览器书签：</strong>仅当用户主动使用“从浏览器书签选择”功能时读取书签名称和网址，供用户选择并添加到导航中。本扩展不会修改或删除浏览器书签。</li>
+    <li><strong>Google 账号信息：</strong>仅当用户主动登录并启用 Google Drive 同步时，读取账号邮箱和头像，用于显示当前同步账号。</li>
+    <li><strong>Google OAuth 授权信息：</strong>通过 Chrome Identity API 获取访问令牌，以执行用户请求的 Google Drive 配置同步。本扩展不会获取或保存用户的 Google 密码。</li>
+  </ul>
+
+  <h2>2. 数据的使用方式</h2>
+  <p>上述数据仅用于提供新标签页导航、恢复用户偏好、显示网站图标、执行用户提交的搜索，以及在用户主动启用时完成 Google Drive 配置备份和同步。本扩展不会将数据用于广告、用户画像或与核心功能无关的用途。</p>
+
+  <h2>3. 本地存储</h2>
+  <p>导航配置和背景图片默认通过 Chrome Storage API 保存在用户浏览器本地。开发者没有用于接收这些本地数据的服务器。用户可以在扩展的“设置 → 数据”中清除数据，也可以通过卸载扩展删除本地数据。</p>
+
+  <h2>4. Google Drive 同步</h2>
+  <p>Google Drive 同步是可选功能。启用后，本扩展使用 HTTPS 将配置文件保存到用户自己的 Google Drive，并且只访问由本扩展创建或由用户授权本扩展使用的配置文件。本扩展不会读取用户 Google Drive 中的其他文件。退出 Google 账号会移除本扩展当前使用的授权令牌；已保存的配置文件会保留在用户的 Google Drive 中，直到用户自行删除。</p>
+
+  <div class="notice">
+    The use of information received from Google APIs will adhere to the Chrome Web Store User Data Policy, including the Limited Use requirements.<br>
+    本扩展对从 Google API 获取的信息的使用将遵守 Chrome 应用商店用户数据政策，包括“有限使用”要求。
+  </div>
+
+  <h2>5. 搜索与网站图标</h2>
+  <p>只有在用户主动提交搜索时，本扩展才会通过 Chrome Search API 或用户选择的搜索服务执行搜索。搜索内容会直接发送给相应的搜索服务，而不会发送给本扩展开发者。网站图标通过 Chrome 提供的 favicon 功能显示，不用于跟踪浏览行为。</p>
+
+  <h2>6. 数据共享与出售</h2>
+  <p>开发者不会出售、出租或向第三方共享用户数据。除为提供用户主动请求的 Google Drive 同步或搜索功能而直接与相应服务通信外，本扩展不会向第三方传输用户数据。</p>
+
+  <h2>7. 数据安全与保留</h2>
+  <p>与 Google API 的通信使用 HTTPS。数据仅在提供功能所需的期限内保留：本地数据由用户在浏览器中管理；Google Drive 配置文件由用户在自己的 Google Drive 中管理。</p>
+
+  <h2>8. 用户的选择与控制</h2>
+  <ul>
+    <li>Google Drive 同步默认由用户主动登录和授权后启用。</li>
+    <li>用户可以随时退出 Google 登录、导入或清除本地配置。</li>
+    <li>用户可以在 Google 账号权限页面撤销本扩展的访问权限。</li>
+    <li>用户可以在自己的 Google Drive 中删除本扩展创建的配置文件。</li>
+  </ul>
+
+  <h2>9. 政策变更</h2>
+  <p>如果本扩展的数据处理方式发生实质变化，本政策将同步更新，并在适用情况下向用户提供明确通知。</p>
+
+  <h2>10. 联系方式</h2>
+  <p>如对本隐私政策或数据处理方式有疑问，请联系：<a href="mailto:tanli1997@gmail.com">tanli1997@gmail.com</a></p>
+
+  <footer>© 2026 NewTab Studio · 新标签页导航</footer>
+</main>
+</body>
+</html>
